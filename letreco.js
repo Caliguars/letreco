@@ -28,6 +28,9 @@ function testarPalavra(){
         if(palavra[i]==certa[i]){
             addCerta(palavra[i]);
         }
+        else{
+            addErrada(palavra[i]);
+        }
     }
     idLinha++;
     linha = document.getElementById("linha"+idLinha);
@@ -39,6 +42,22 @@ function addCerta(letra){
     let item = document.createElement("div");
     item.classList.add("letra");
     item.classList.add("Alfa");
+    item.textContent = letra;
+    linha.appendChild(item);
+} 
+function addQuase(letra){
+    console.log(letra);
+    let item = document.createElement("div");
+    item.classList.add("letra");
+    item.classList.add("Betinha");
+    item.textContent = letra;
+    linha.appendChild(item);
+} 
+function addErrada(letra){
+    console.log(letra);
+    let item = document.createElement("div");
+    item.classList.add("letra");
+    item.classList.add("Betinha");
     item.textContent = letra;
     linha.appendChild(item);
 } 
