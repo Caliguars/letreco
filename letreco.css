@@ -16,8 +16,14 @@
     box-shadow: 1px 1px 10px;
 }
 
-.certa{
+.Alfa{
     background-color: #3F3;
+}
+.moggado{
+    background-color: rgb(255, 160, 17);
+}
+.Betinha{
+    background-color: rgb(255, 0, 0);
 }
 
 .centro{
@@ -29,4 +35,5 @@
 
 input{
     margin: 20px;
+
 }

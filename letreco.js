@@ -1,6 +1,14 @@
 idLinha = 1;
 let linha = document.getElementById("linha"+idLinha);
-let certa="ARTUR";
+let palavras= [
+    "Amigo", "Casal", "Brisa", "Vento", "Falar", "Chuva", "Lapiz", 
+    "Tigre", "Neves", "Anexo", "Tarde", "Canto", "Doido", "Feliz", "Mente", "Rosto", "Sabor", 
+    "Forca", "Gosto", "Nuvem", "Viver", "Noite", "Limpo", "Sonho", "Tocar", "Fruta", "Olhar", "Mural", 
+    "Fraco", "Forte", "Cinto", "Verde", "Preco", "Prato", "Misto", "Folha", "Barco", "Areia", "Lente", 
+    "Fardo", "Dente", "Bolas", "Poeta", "Copas",
+     "Raiva", "Meiga", "Cebola", "Leite", "Pente", "Planta"
+]
+let certa = palavras[Math.floor(Math.random() * palavras.length)];
 let botao = document.getElementById("btnTestar");
 let input = document.getElementById("entrada");
 botao.addEventListener("click",testarPalavra);
@@ -23,13 +31,14 @@ function testarPalavra(){
     }
     idLinha++;
     linha = document.getElementById("linha"+idLinha);
+
 }
 
 function addCerta(letra){
     console.log(letra);
     let item = document.createElement("div");
     item.classList.add("letra");
-    item.classList.add("certa");
+    item.classList.add("Alfa");
     item.textContent = letra;
     linha.appendChild(item);
 } 
