@@ -37,3 +37,15 @@ input{
     margin: 20px;
 
 }
+
+body{
+    background-color: rgb(19, 39, 128);
+    background-image:url('pericles.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+header{
+    text-align: center;
+    background-color: rgb(90, 156, 231);
+}
